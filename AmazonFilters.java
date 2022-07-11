@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-/* Here, we have applied filters available in amazon website.
+/* Here, I have applied filters available in amazon website. 
 Filters Added --->>> Get it by Tomorrow, selected smartphones from departments, Reviews : 4star & up, Price over 20000max and discount applied equals 10%
 */
 
