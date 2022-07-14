@@ -9,6 +9,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+/* In this file, I have written a sciript to find the count of a links in a webpage, footer section and column separately. 
+Also, I have opened each of the column links in a separate browser window and navigated to each of the windows to grab the title.*/
 
 public class WorkingWithLinks {
 	public static void main(String[] args) throws InterruptedException {
