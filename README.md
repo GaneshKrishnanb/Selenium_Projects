@@ -1,4 +1,4 @@
 # Selenium_Projects
 
 
-I have written a script to automate the add to cart action in a practice website. I have added multiple items to cart.
+I have written scripts to automate various manual actions which we perform in the browsers using selenium webdriver.
