@@ -96,7 +96,7 @@ public class Flight_Ticket {
     		Coupon.click();
     		
     	   // Handling the alert box
-    	  /*  driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+    	   driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
     	    WebDriverWait alert = new WebDriverWait(driver, Duration.ofSeconds(20));
     		if(alert.until(ExpectedConditions.alertIsPresent())== null) {
     			System.out.println("alert is not present");
@@ -104,33 +104,11 @@ public class Flight_Ticket {
     		else {
     			driver.switchTo().alert();
         		driver.findElement(By.xpath("//div[@id ='modalLoadAny']/div/div/div[3]/a")).click();
-    		} */
+    		} 
+		
     		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
     		WebDriverWait Wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     		WebElement Coupon_Message = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='preloader_setup']/div/div[1]/div[8]/div/div/article/div/div/div[8]/div[3]")));
     		System.out.println("Coupon has been applied");
-    		driver.findElement(By.xpath("// input[@ id = 'email']")).sendKeys("abc@gmail.com");
-    		driver.findElement(By.id("Phone")).sendKeys("98765412301");
-    		
-    		// Logic to handle the static dropdown
-    		WebElement dropdown = driver.findElement(By.id("title_ADT1"));
-    		Select stat = new Select(dropdown);
-    		stat.selectByIndex(1);
-    		
-    		driver.findElement(By.id("firstname_ADT1")).sendKeys("abc");
-    		
-    		// Selecting the DOB
-    		driver.findElement(By.id("dob_ADT1")).click();
-    		driver.findElement(By.xpath("// div [@class = 'caleran-ys-year-prev']")).click();
-    		driver.findElement(By.xpath("/html/body/div[14]/div[2]/div[2]/div[3]/div[2]")).click();
-    		driver.findElement(By.xpath("/html/body/div[14]/div[2]/div[2]/div[3]/div[8]")).click();
-    		driver.findElement(By.xpath("/html/body/div[14]/div[2]/div[2]/div[1]/div[2]/div[19]")).click();
     }
-    }
-   /* @Test
-	private void Passengerdetails() {
-		// TODO Auto-generated method stub
-		//driver.navigate().to("https://www.tripodeal.com/book?tid=62ef9e0108eb6e28170b39bc&did=62ef9e0108eb6e28170b39bc_d_21&rid=");
-		
-	}
-} */
+   
